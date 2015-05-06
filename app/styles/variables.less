@@ -1,2 +1,79 @@
-@body-bg:               #ccc;
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+@body-bg:               #000;
 @text-color:            #fff;
+
+
+
+
+
+
+//nav dropdown
+
+@dropdown-bg:                    #222;
+
+@dropdown-link-color:             @component-active-bg;
+@dropdown-link-hover-color:       #000;
+
+
+
+//sprite
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  height: 128px;
+  background-color: #222;
+
+	.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+	    background-position: @x @y;
+	    width: @width;
+	    height: @height;
+	    list-style:none;
+	    float:left;
+	}
+
+	.sprite {
+	    background: url('../images/sprite.png'); 
+	    background-repeat: no-repeat;
+	    display: block;
+	    list-style:none;
+	    float:left;
+
+	    &.sprite-facebook {
+	        .stitches-sprite(0, 0, 128px, 128px);
+	    }
+
+	    &.sprite-google-plus {
+	        .stitches-sprite(-128px, 0, 128px, 128px);
+	    }
+
+	    &.sprite-linked-in {
+	        .stitches-sprite(-256px, 0, 128px, 128px);
+	    }
+
+	    &.sprite-mail {
+	        .stitches-sprite(-384px, 0, 128px, 128px);
+	    }
+
+	    &.sprite-steam {
+	        .stitches-sprite(-512px, 0, 128px, 128px);
+	    }
+
+	    &.sprite-twitter {
+	        .stitches-sprite(-640px, 0, 128px, 128px);
+	    }
+
+	    &.sprite-youtube {
+	        .stitches-sprite(-768px, 0, 128px, 128px);
+	    }
+	}
+}
