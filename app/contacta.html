@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="ES">
 
 <head>
     <meta charset="utf-8">
@@ -10,6 +10,7 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -18,7 +19,7 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
-    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Vollkorn' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 </head>
@@ -29,7 +30,7 @@
     <![endif]-->
 
 
-<div class="navbar navbar-inverse">
+<div class="navbar navbar-inverse  navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -37,7 +38,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <span id="logo"><img src="images/company_logo.png" height="31" width="180" alt=""></span>
                 </a>
             </div>
@@ -48,21 +49,17 @@
                     </li>
 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actividades
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Media
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#">enlace1</a>
+                                <a href="video1.html">Video1</a>
                             </li>
                             <li>
-                                <a href="#">enlace1</a>
+                                <a href="video2.html">Video2</a>
                             </li>
                         </ul>
-                    </li>
-
-                    <li>
-                        <a href="#">enlace1</a>
                     </li>
                     <li class="active">
                         <a href="contacta.html">Contacto</a>
@@ -74,8 +71,13 @@
             <!--/.navbar-collapse -->
         </div>
     </div>
-
+<br />
 <div class="container">
+
+<div class="page-header">
+  <h1>Contacta </h1>
+</div>
+
 <div class="row">
             <div class="container">
                 <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -88,13 +90,13 @@
                     <div class="carousel-inner">
 
                         <div class="item active">
-                            <center><img src="images/HexagonV7/app-drawer.png" height="128" width="128" alt="drawer"></center>
+                            <img src="images/HexagonV7/app-drawer.png" class="center-block" height="128" width="128" alt="drawer">
                         </div>
                         <div class="item">
-                            <center><img src="images/HexagonV7/drive.png" height="128" width="128" alt="drive"></center>
+                            <img src="images/HexagonV7/drive.png" class="center-block" height="128" width="128" alt="drive">
                         </div>
                         <div class="item">
-                            <center><img src="images/HexagonV7/message-thick.png" height="128" width="128" alt="message-thinck"></center>
+                            <img src="images/HexagonV7/message-thick.png" class="center-block" height="128" width="128" alt="message-thinck">
                         </div>
                     </div>
                     <!-- Controls -->
@@ -105,8 +107,6 @@
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                     </a>
                 </div>
-
-
             </div>
 </div>
 
@@ -116,38 +116,47 @@
   <span class="input-group-addon" id="basic-addon1">Nombre</span>
   <input type="text" class="form-control" placeholder="Nombre" aria-describedby="basic-addon-nombre">
 </div>
+<br>
 <div class="input-group">
   <span class="input-group-addon" id="basic-addon1">Apellidos</span>
   <input type="text" class="form-control" placeholder="Apellidos" aria-describedby="basic-addon-apelidos">
 </div>
-
+<br>
 <div class="input-group">
   <input type="text" class="form-control" placeholder="Correo Electronico" aria-describedby="basic-addon-email">
   <span class="input-group-addon" id="basic-addon2">@example.com</span>
 </div>
-
+<br>
 
 <div class="row">
   <div class="col-lg-6">
     <div class="input-group">
       <span class="input-group-addon">
         <input type="checkbox" aria-label="...">opcion1
-         <input type="checkbox" aria-label="...">opcion2
-          <input type="checkbox" aria-label="...">opcion3
+      </span>
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">opcion2
+      </span>
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">opcion3
       </span>
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
-
   <div class="col-lg-6">
     <div class="input-group">
       <span class="input-group-addon">
-        <input type="radio" aria-label="...">
+        <input type="radio" aria-label="..." name="sexo">
+        Mujer</br>
       </span>
-      <input type="text" class="form-control" aria-label="...">
+      
+      <span class="input-group-addon">
+        <input type="radio" aria-label="..." name="sexo">
+        Hombre</br>
+      </span>
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
-
+<br>
 
 
 
@@ -157,29 +166,31 @@
 <footer class="footer panel-footer-padding">
       <div class="container">
             <ul>
-            <a href="https://es-es.facebook.com/" target="_blank">
-                <li class="sprite sprite-facebook"></li>
-            </a>
-            <a href="https://accounts.google.com/ServiceLogin?service=mail&continue=https://mail.google.com/mail/&hl=es#identifier" target="_blank">
-                <li class="sprite sprite-google-plus"></li>
-            </a>
-            <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1430910202&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fmail.live.com%2Fdefault.aspx&lc=3082&id=64855&mkt=es-es&cbcxt=mai" target="_blank">
-                <li class="sprite sprite-mail"></li>
-            </a>
-            <a href="https://twitter.com/?lang=es" target="_blank">
-                <li class="sprite sprite-twitter"></li>
-            </a>
-            <a href="https://www.youtube.com/?hl=es&gl=ES" target="_blank">
-                <li class="sprite sprite-youtube"></li>
-            </a>
-            <a href="https://es.linkedin.com/nhome/" target="_blank">
-                <li class="sprite sprite-linked-in"></li>
-            </a>
-            <a href="http://store.steampowered.com/" target="_blank">
-                <li class="sprite sprite-steam"></li>
-            </a>
+                <a href="https://es-es.facebook.com/" target="_blank">
+                    <li class="sprite sprite-facebook"></li>
+                </a>
+                <a href="https://accounts.google.com/ServiceLogin?service=mail&continue=https://mail.google.com/mail/&hl=es#identifier" target="_blank">
+                    <li class="sprite sprite-google-plus"></li>
+                </a>
+                <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1430910202&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fmail.live.com%2Fdefault.aspx&lc=3082&id=64855&mkt=es-es&cbcxt=mai" target="_blank">
+                    <li class="sprite sprite-mail"></li>
+                </a>
+                <a href="https://twitter.com/?lang=es" target="_blank">
+                    <li class="sprite sprite-twitter"></li>
+                </a>
+                <a href="https://www.youtube.com/?hl=es&gl=ES" target="_blank">
+                    <li class="sprite sprite-youtube"></li>
+                </a>
+                <a href="https://es.linkedin.com/nhome/" target="_blank">
+                    <li class="sprite sprite-linked-in"></li>
+                </a>
+                <a href="http://store.steampowered.com/" target="_blank">
+                    <li class="sprite sprite-steam"></li>
+                </a>
             </ul>
-        <p class="pull-right text-muted">Kevin González</p>
+        <p class="pull-right text-muted">Kevin González</br>
+        Agradecimiento a: <a href="http://codepen.io/" target="_blank">Codepen</a>
+        </p>
       </div>
 </footer>
 

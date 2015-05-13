@@ -5,6 +5,9 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background: url('../images/bg_patron.jpg');
+  /*font*/
+  font-family: 'Nova Square', cursive;
 }
 footer {
   position: relative;

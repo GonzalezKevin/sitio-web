@@ -18,7 +18,7 @@
     <!-- endbuild -->
    
     <!-- build:js scripts/vendor/modernizr.js -->
-    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Vollkorn' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 </head>
@@ -29,7 +29,7 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-<div class="navbar navbar-inverse">
+<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -37,7 +37,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <span id="logo"><img src="images/company_logo.png" height="31" width="180" alt=""></span>
                 </a>
             </div>
@@ -48,21 +48,17 @@
                     </li>
 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actividades
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Media
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#">enlace1</a>
+                                <a href="video1.html">Video1</a>
                             </li>
                             <li>
-                                <a href="#">enlace1</a>
+                                <a href="video2.html">Video2</a>
                             </li>
                         </ul>
-                    </li>
-
-                    <li>
-                        <a href="#">enlace1</a>
                     </li>
                     <li>
                         <a href="contacta.html">Contacto</a>
@@ -74,9 +70,13 @@
             <!--/.navbar-collapse -->
         </div>
     </div>
-
+<br />
 <div class="container">
 <div class="row">
+<div class="page-header">
+  <h1>Index </h1>
+</div>
+
             <div class="container">
                 <div id="carousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -88,13 +88,13 @@
                     <div class="carousel-inner">
 
                         <div class="item active">
-                            <center><img src="images/HexagonV7/app-drawer.png" height="128" width="128" alt="drawer"></center>
+                            <img src="images/HexagonV7/app-drawer.png" class="center-block" height="128" width="128" alt="drawer">
                         </div>
                         <div class="item">
-                            <center><img src="images/HexagonV7/drive.png" height="128" width="128" alt="drive"></center>
+                            <img src="images/HexagonV7/drive.png" class="center-block" height="128" width="128" alt="drive">
                         </div>
-                        <div class="item">
-                            <center><img src="images/HexagonV7/message-thick.png" height="128" width="128" alt="message-thinck"></center>
+                        <div class="item center-block">
+                            <img src="images/HexagonV7/message-thick.png" class="center-block" height="128" width="128" alt="message-thinck">
                         </div>
                     </div>
                     <!-- Controls -->
@@ -110,34 +110,11 @@
             </div>
 </div>
 
-<div class="page-header">
-  <h1>Example page header <small>Subtext for header</small></h1>
-</div>
 
-
-
-
-<a href="http://codepen.io/">Codepen</a>
-
-texto sin nada
 
 <h1>Lorem</h1>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, voluptate praesentium, maxime vitae expedita velit fuga. Ut, ipsa, laboriosam! Consequatur architecto, doloribus. Veniam tempore velit id, culpa eveniet asperiores facere.</p>
-
-
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ZonaVideo" aria-expanded="false" aria-controls="ZonaVideo">Ver Video</button>
-<div class="collapse" id="ZonaVideo">
-    <div class="well">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/e828U4SJgow" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div class="row">
   <div class="col-xs-12 col-sm-6 col-md-3">
@@ -212,7 +189,9 @@ texto sin nada
                 <li class="sprite sprite-steam"></li>
             </a>
             </ul>
-        <p class="pull-right text-muted">Kevin González</p>
+        <p class="pull-right text-muted">Kevin González<br />
+        Agradecimiento a: <a href="http://codepen.io/" target="_blank">Codepen</a>
+        </p>
       </div>
 </footer>
 
